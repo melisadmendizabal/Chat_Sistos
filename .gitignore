@@ -7,6 +7,12 @@
 *.obj
 *.elf
 
+
+# Compilados de Linux (sin extensión)
+cliente
+servidor
+
+
 # Linker output
 *.ilk
 *.map
