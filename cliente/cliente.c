@@ -20,7 +20,7 @@
 #include <stdlib.h>     /* exit */
 #include <string.h>     /* memset, strncpy, strlen */
 #include <unistd.h>     /* close */
-
+#include <pthread.h>
 /* Librerías de red (sockets) */
 #include <sys/socket.h> /* socket, connect, send, recv */
 #include <arpa/inet.h>  /* inet_pton, htons — para convertir IPs y puertos */
