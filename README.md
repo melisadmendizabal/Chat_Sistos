@@ -36,36 +36,36 @@ Este diseño permite una comunicación eficiente y estructurada entre cliente y 
 ## Compilación
 El proyecto incluye un Makefile para compilar el servidor:
 
-´´´
+```
 make
-´´´
+```
 
 Esto generará el ejecutable:
 
-´´´
+```
 ./servidor
-´´´
+```
 
 Para limpiar archivos compilados:
-´´´
+```
 make clean
-´´´
+```
 
 
 ## Ejecución
 ### Servidor
 
-´´´
+```
 ./servidor <puerto>
-´´´
+```
 
 
 ### Cliente
 
-´´´
+```
 gcc -o cliente cliente.c -lpthread
 ./cliente <username> <IP_servidor> <puerto>
-´´´
+```
 
 ## Funcionalidades del Servidor
 - Registro de usuarios con validación de duplicados
