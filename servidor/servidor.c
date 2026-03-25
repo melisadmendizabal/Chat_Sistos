@@ -82,6 +82,13 @@ void *manejar_cliente(void *arg) {
         }
     }
 
+    if (num_clientes >= MAX_CLIENTS) {
+        pthread_mutex_unlock(&mutex_lista);
+        enviar_paquete(fd, CMD_ERROR, "SERVER", pkt.sender, "Servidor lleno");
+        close(fd);
+        return NULL;
+    }
+    
     // Registrar cliente
     int idx = num_clientes++;
     strncpy(lista[idx].username, pkt.sender, 31);
